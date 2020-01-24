@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="py-mclimate-api",
-    version="0.0.1",
+    version="1.0.1",
     author="MClimate",
     author_email="hi@seemelissa.com",
     description="MClimate API Wrapper in Python",

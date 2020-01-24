@@ -1,0 +1,3 @@
+build/*
+dist/*
+py_mclimate_api.egg-info/*

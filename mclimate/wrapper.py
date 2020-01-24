@@ -7,9 +7,9 @@ import requests
 from requests_futures.sessions import FuturesSession
 from datetime import datetime
 
-from mclimate_api_wrapper.core import CoreDevices, CHANGE_TIME_CACHE_DEFAULT, HEADERS, \
+from mclimate.core import CoreDevices, CHANGE_TIME_CACHE_DEFAULT, HEADERS, \
     MCLIMATE_URL, CLIENT_DATA
-from mclimate_api_wrapper.exceptions import ApiException
+from mclimate.exceptions import ApiException
 
 __author__ = 'MClimate'
 LOGGER = logging.getLogger(__name__)
@@ -17,10 +17,10 @@ LOGGER = logging.getLogger(__name__)
 SESSION = FuturesSession(max_workers=10)
 
 
-class MClimate(CoreDevices):
+class Mclimate(CoreDevices):
 
     def __init__(self, **kwargs):
-        super(MClimate, self).__init__(**kwargs)
+        super(Mclimate, self).__init__(**kwargs)
         self.username = kwargs['username']
         self.password = kwargs['password']
         self.refresh_token = kwargs.get('refresh_token', None)
