@@ -13,6 +13,11 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Pernichev/mclimate_api_wrapper",
     packages=setuptools.find_packages(),
+    install_requires=[
+        "requests>=2",
+        "requests-futures>=1",
+        "aiohttp>=3"
+    ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
